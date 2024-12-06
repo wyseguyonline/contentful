@@ -21,9 +21,9 @@ const SearchResults = ({searchStr}) => {
 
   const renderSearchResult = (searchResult) => {
     return (
-      <>
-        <div className="searchResult" onClick={() => setOpenSynopsis(searchResult.imdbID)}>{`${searchResult.Title} (${searchResult.Year})`}</div>
-      </>
+      <div>
+        <button className="searchResult" onClick={() => setOpenSynopsis(searchResult.imdbID)}>{`${searchResult.Title} (${searchResult.Year})`}</button>
+      </div>
     );
   };
 
