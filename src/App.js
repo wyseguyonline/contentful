@@ -1,6 +1,11 @@
+import MovieContainer from './movieContainer';
 
 function App() {
-  return <div>Hello world!</div>;
+  return (
+    <div>
+      <MovieContainer />
+    </div>
+  );
 }
 
 export default App;
