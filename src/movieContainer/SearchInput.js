@@ -4,7 +4,6 @@ const SearchInput = ({searchStrHandler}) => {
   const searchStr = useRef('');
 
   const searchHandler = () => {
-    console.log('search string', searchStr.current);
     searchStrHandler(searchStr.current);
   };
 
