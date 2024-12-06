@@ -14,12 +14,15 @@ const Synopsis = ({filmId}) => {
   }, [filmId]);
 
   return (
-    <div style={{border: '1px solid #000000'}}>
-      <div>{synopsis.Tile}</div>
-      <div>{synopsis.Year}</div>
-      <div>{synopsis.Rating}</div>
-      <div>{synopsis.Actors}</div>
-      <div>{synopsis.Plot}</div>
+    <div style={{border: '1px solid #000000', margin: '10px', width: '40%'}}>
+      <div>Title: {synopsis.Title} ({synopsis.Type})</div>
+      <div>Released: {synopsis.Year}</div>
+      <div>Rated: {synopsis.Rated}</div>
+      <div>Notable Cast: {synopsis.Actors}</div>
+      <div>
+        <p>Plot Summary:</p>
+        <p>{synopsis.Plot}</p>
+      </div>
       <div><img src={synopsis.Poster} alt="Movie Poster"/></div>
     </div>
   );
